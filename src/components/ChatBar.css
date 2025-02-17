@@ -1,0 +1,37 @@
+.chat-bar {
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  width: calc(100% - 240px); /* Adjust width to account for the navbar */
+  margin-left: 240px; /* Position to the right of the navbar */
+  flex-grow: 1; /* Make the div span to the right of the screen */
+  position: absolute; /* Ensure proper positioning */
+  z-index: -1; /* Ensure it appears above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+h1 {
+  color: black;
+  margin-left: 20px;
+}
+
+.chat-button {
+  margin-right: 20px;
+  padding: 12px 20px;
+  background-color: #383C9F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-button:hover {
+  background-color: rgb(52, 74, 141);
+}
+
+svg {
+    font-size: 15px;
+    margin-right: 5px;
+}

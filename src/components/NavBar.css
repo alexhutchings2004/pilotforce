@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+div {
+    font-family: "Poppins", serif;
+    /* margin: 0; */
+}
+
+.navbar {
+    width: 250px;
+    background-color: #383C9F;
+    height: 100vh; /* Make the navigation bar span the height of the page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 8px 8px 0;
+    padding-bottom: 16px; /* Add padding to the bottom */
+    box-sizing: border-box; /* Include padding in the height calculation */
+    position: relative; /* Enable positioning of the logout icon */
+}
+
+h1 {
+    text-align: center;
+    color: white !important;
+    margin-top: 200;
+    padding: 16px 0;
+    background-color: transparent; /* Make the background transparent */
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the user profile */
+    margin: 16px 0;
+    width: 100%; /* Ensure consistent width */
+}
+
+.user-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Ensure the image fits within the circle */
+    margin-right: 10px;
+}
+
+.user-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+    color: white;
+}
+
+.user-role {
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure consistent width */
+    background-color: #383C9F;
+    flex-grow: 1; /* Allow the ul to grow and take available space */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the text and icons to the left */
+    padding-left: 0px; /* Align with the navbar */
+    margin-top: 16px;
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+li {
+    text-align: left; /* Align the text to the left */
+    width: 100%;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align the icons to the left */
+    color: rgba(255, 255, 255, .5);
+    padding: 16px 0; /* Adjust padding to align with the user icon */
+    text-decoration: none;
+    margin-left: 50%;
+    transform: translate(-50%, 0); /* Center the text */
+    width: 60%;
+}
+
+li a svg {
+    margin-right: 12px; /* Increase the gap between the text and the icons */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a.active {
+    color: white;
+}
+
+li a:hover:not(.active) {
+    color: rgba(255, 255, 255, 1);
+}
+
+.logout-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    color: rgba(255, 255, 255, .5);
+    font-size: 25px;
+}
+
+.logout-icon:hover {
+    color: rgba(255, 255, 255, 1);
+}
